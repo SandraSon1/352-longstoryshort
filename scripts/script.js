@@ -25,3 +25,7 @@ $(document).ready(function() {
     // To get the value to change we check if the window is resized - if it is, the "checkWidth()" function is run again. This means the windowsize variable is always up to date with the current real size of the window.
 
 });
+
+$(window).scroll(function(){
+    $("#money").css("opacity", 1 - $(window).scrollTop() / 100);
+  });
