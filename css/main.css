@@ -13,6 +13,8 @@ html {
     overflow-x: hidden;
     /* This is telling the browser to hide anything that goes off the left and right edges of the page, and not let the user scroll to see it. */
 
+
+
 }
 
 body {
@@ -29,8 +31,9 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+
   flex-direction: column;
+
 
 }
 
@@ -148,7 +151,7 @@ line-height: 1.6;
 background-color:pink;
 flex: 58.33%;
 width: 58.33vw;
-height: 100vh;
+min-height: 100%;
 
 background-image: url('../img/women.jpg');
 background-size: cover;
@@ -160,7 +163,7 @@ background-size: cover;
 #use{
 flex: 41.67%;
 width: 41.67vw;
-height: 100vh;
+height: 100%;
 
 }
 
@@ -399,22 +402,162 @@ letter-spacing: 0.25em;
 
 
 
-@media (max-width: 755px){
+@media (max-width: 990px){
  
  h2{
-  margin-top: 5%;
+  margin-top:0;
  }
 
- #image-use{
-  flex: 100%;
-  max-width: 100%;
 
- }
 
 }
 
 
+@media (max-width: 800px){
+ #phone{
 
+flex-basis: 100%;
+max-width: 70%;
+
+}
+
+#tech{
+
+flex: 100%;
+max-width: 100%;
+min-height: 100%;
+
+  display: block;
+    margin-left: 10%;
+  
+
+
+
+}
+
+
+#five{
+
+
+max-width: 0%;
+
+
+}
+
+
+h2{
+  font-size: 2em;
+}
+
+#idea{
+font-size: 1em;
+
+
+
+}
+
+
+#image-use{
+
+
+flex: 100%;
+width: 100%;
+
+}
+
+#use{
+flex: 100%;
+width: 100%;
+
+
+}
+
+.container-six > #map{
+
+padding-top: 20%;
+flex: 100%;
+width: 90%;
+
+
+
+
+
+}
+
+.container-six > #six{
+
+
+flex: 100%;
+width: 100%;
+
+
+}
+
+#technologies{
+  
+  font-size: 2em;
+  text-align: center;
+}
+
+#a{
+margin-left:2%;
+line-height: normal;
+letter-spacing: 0.25em;
+}
+
+h1{
+  font-size: 1.5em;
+}
+
+.flex-container {
+  min-height: 0;
+  }
+
+.container-info {
+  min-height: 0;
+}
+
+
+.container-use {
+
+
+  min-height: 0;
+  
+}
+
+.container-four {
+ min-height: 0;
+ 
+
+ 
+}
+
+.container-five {
+ min-height: 0;
+}
+
+
+.container-six {
+  
+
+  min-height: 0;
+
+}
+
+
+.container-seven{
+  min-height: 0;
+  
+ 
+}
+
+.container-eight {
+ 
+  min-height: 0;
+ 
+}
+
+}
 
 
 
