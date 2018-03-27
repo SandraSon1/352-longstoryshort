@@ -1,9 +1,4 @@
-/*  This is a comment in CSS.
-    HTML5 Responsive Web Design Template
-    by Stefan Schultz
-    for MDDN 352: Mobile Media (T1 2018)
-    - If you use this template, remove most of the comments for production, or minify your HTML. -
-*/
+
 
 
 /* -------- Base styles - these will always apply, no matter what. -------- */
@@ -15,9 +10,6 @@ html {
     font-size: 16px;
     /* This tells every piece of text should default to 16px in size. We'll use other values as multipliers of this later, but this ensures styling consistency across browsers/platforms. */
 
-    color: rgb(70,70,85);
-    /* This sets all text to be a very dark, slightly blue grey. You can specify a named color, a hex code (#FFFFFF, e.g.), use rgb or hsl, or use rgba/hsla for color with alpha (translucency). */
-
     overflow-x: hidden;
     /* This is telling the browser to hide anything that goes off the left and right edges of the page, and not let the user scroll to see it. */
 
@@ -25,14 +17,15 @@ html {
 
 body {
     width: 100%;
-   /* background-color: #FF412D;*/
+   
 }
+
+/*first page*/
 
 
 .flex-container {
   display: flex;
- /* background-color: blue;*/
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -44,7 +37,7 @@ body {
 
 .flex-container > #money {
  
-  background-color: blue;
+ 
   height: 25vw;
   width: 52vw;
   flex-shrink: 1;
@@ -61,13 +54,12 @@ body {
 p, i{
   opacity: 0;
   text-align: center;
-/*  -webkit-animation-delay: 15s;*/
 -webkit-animation-name: fadein;
 -webkit-animation-duration: 5s;
--webkit-animation-delay: 2s;
+-webkit-animation-delay: 0.5s;
 -webkit-animation-fill-mode: forwards;
+letter-spacing: 0.25em;
 
-/*-webkit-animation:fadein -10s 4s;*/
 
 
 }
@@ -79,27 +71,12 @@ p, i{
  
 
   #scroll{
-   
-    /*background-color: orange;*/
    margin-top: 2%;
    letter-spacing: 0.25em;
    font-size: 0.75em;
-    /*margin-bottom: 2%;
-    width:100%;
-    margin-bottom: 5%;*/
+    
   }
     
-
-
-
-.container {
-  display: flex;
- /* background-color: pink;*/
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
 
 i {
     border: solid black;
@@ -109,13 +86,346 @@ i {
 
 }
 
+
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
+
+/*second page*/
+
+h1{
+  font-family: 'Palanquin', sans-serif;
+  letter-spacing: 0.4em;
+}
+
+
+.container-info {
+  display: flex;
+ 
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
 #info{
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 0.25em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+
+}
+
+
+.container-info > #information {
+ 
+  
+flex-shrink: 1;
+margin: 20%;
+line-height: 1.6;
+
+}
+
+
+/*third page*/
+
+
+.container-use {
+  display: flex;
+
+  min-height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+.container-use > #image-use{
+
+background-color:pink;
+flex: 58.33%;
+width: 58.33vw;
+height: 100vh;
+
+background-image: url('../img/women.jpg');
+background-size: cover;
+
+
+
+}
+
+#use{
+flex: 41.67%;
+width: 41.67vw;
+height: 100vh;
+
+}
+
+h2{
+   font-family: 'Palanquin', sans-serif;
+   text-transform: uppercase;
+   margin: 10%;
+   margin-top: 55%;
+   text-align: left;
+   letter-spacing: 0.25em;
+   font-weight:bolder;
+   line-height: 1.6;
+}
+
+#idea{
+margin: 10%;
+letter-spacing: 0.25em;
+text-align: left;
+line-height: 1.6;
+
+}
+
+
+/*fourth page*/
+
+.container-four {
+  display: flex;
+  padding: 10%;
+ 
+  min-height: 80%;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+ 
+}
+
+
+
+#app{
+
+font-size: 3em;
+
+margin-top:1;
+text-align: left;
+}
+
+#pi{
   letter-spacing: 0.25em;
 }
+
+
+
+#phone{
+
+flex: 25%;
+max-width: 25%;
+
+padding: 1%;
+
+
+  
+}
+
+img {
+
+
+   
+     width: 100%;
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*fifth page*/
+.container-five {
+  display: flex;
+
+  min-height: 100%;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+#five{
+
+flex: 45%;
+max-width: 45%;
+
+
+}
+
+#tech{
+
+flex: 55%;
+max-width: 55vw;
+
+height: 80vh;
+
+
+}
+
+#easy{
+  letter-spacing: 0.25em;
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+/*sixth page*/
+
+.container-six {
+  display: flex;
+
+  min-height: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+
+.container-six > #map{
+
+background-color:pink;
+flex: 50%;
+width: 50vw;
+height: 80vh;
+
+background-image: url('../img/map.jpg');
+background-size: cover;
+
+}
+
+.container-six > #six{
+
+
+flex: 50%;
+width: 50vw;
+height: 80vh;
+
+
+
+}
+
+
+
+#desktop{
+
+margin-top: 35%;
+font-size: 2.5em;
+text-align: center;
+
+
+}
+
+#real{
+  letter-spacing: 0.25em;
+}
+/*seventh page*/
+
+.container-eight {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+
+.container-eight > #eight {
+ 
+
+  height: 30vw;
+  width: 30vw;
+  flex-shrink: 1;
+  background-size: cover;
+ background-image: url('../img/kate.png')
+
+}
+
+
+
+.container-seven{
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+ 
+
+}
+#technologies{
+  margin:5%;
+  font-size: 2em;
+  text-align: center;
+}
+
+#a{
+text-align: left;
+line-height: 1.6;
+letter-spacing: 0.25em;
+}
+
+.flex-container > #techno {
+ 
+  background-color: blue;
+  height: 25vw;
+  width: 52vw;
+  flex-shrink: 1;
+  background-size: cover;
+ background-image: url('../img/20508384308_1492ff416c_o.jpg')
+
+}
+
+
+
+@media (max-width: 755px){
+ 
+ h2{
+  margin-top: 5%;
+ }
+
+ #image-use{
+  flex: 100%;
+  max-width: 100%;
+
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
