@@ -12,7 +12,7 @@ html {
 
     overflow-x: hidden;
     /* This is telling the browser to hide anything that goes off the left and right edges of the page, and not let the user scroll to see it. */
-
+  
 
 
 }
@@ -148,7 +148,7 @@ line-height: 1.6;
 
 .container-use > #image-use{
 
-background-color:pink;
+
 flex: 58.33%;
 width: 58.33vw;
 min-height: 100%;
@@ -163,7 +163,7 @@ background-size: cover;
 #use{
 flex: 41.67%;
 width: 41.67vw;
-height: 100%;
+
 
 }
 
@@ -193,7 +193,7 @@ line-height: 1.6;
   display: flex;
   padding: 10%;
  
-  min-height: 80%;
+  min-height: 100%;
   width: 80%;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -272,7 +272,7 @@ max-width: 45%;
 flex: 55%;
 max-width: 55vw;
 
-height: 80vh;
+
 
 
 }
@@ -307,7 +307,7 @@ height: 80vh;
 background-color:pink;
 flex: 50%;
 width: 50vw;
-height: 80vh;
+height: 80%;
 
 background-image: url('../img/map.jpg');
 background-size: cover;
@@ -319,7 +319,7 @@ background-size: cover;
 
 flex: 50%;
 width: 50vw;
-height: 80vh;
+
 
 
 
@@ -389,16 +389,10 @@ line-height: 1.6;
 letter-spacing: 0.25em;
 }
 
-.flex-container > #techno {
- 
-  background-color: blue;
-  height: 25vw;
-  width: 52vw;
-  flex-shrink: 1;
-  background-size: cover;
- background-image: url('../img/20508384308_1492ff416c_o.jpg')
 
-}
+
+
+
 
 
 
@@ -423,7 +417,7 @@ max-width: 70%;
 
 #tech{
 
-flex: 100%;
+flex-basis: 100%;
 max-width: 100%;
 min-height: 100%;
 
@@ -460,13 +454,13 @@ font-size: 1em;
 #image-use{
 
 
-flex: 100%;
+flex-basis: 100%;
 width: 100%;
 
 }
 
 #use{
-flex: 100%;
+flex-basis: 100%;
 width: 100%;
 
 
@@ -474,7 +468,7 @@ width: 100%;
 
 .container-six > #map{
 
-padding-top: 20%;
+
 flex: 100%;
 width: 90%;
 
@@ -487,7 +481,7 @@ width: 90%;
 .container-six > #six{
 
 
-flex: 100%;
+flex-basis: 100%;
 width: 100%;
 
 
@@ -509,52 +503,9 @@ h1{
   font-size: 1.5em;
 }
 
-.flex-container {
-  min-height: 0;
-  }
 
-.container-info {
-  min-height: 0;
-}
-
-
-.container-use {
-
-
-  min-height: 0;
-  
-}
-
-.container-four {
- min-height: 0;
- 
-
- 
-}
-
-.container-five {
- min-height: 0;
-}
-
-
-.container-six {
-  
-
-  min-height: 0;
-
-}
-
-
-.container-seven{
-  min-height: 0;
-  
- 
-}
-
-.container-eight {
- 
-  min-height: 0;
- 
+#tech {
+  height: auto;
 }
 
 }
